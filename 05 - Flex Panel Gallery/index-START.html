@@ -61,7 +61,7 @@
       margin: 0;
       width: 100%;
       transition: transform 0.5s;            
-      border: 1px solid red;
+      /* border: 1px solid red; */
       display: flex;
       justify-content: center;
       flex: 1 0 auto;
@@ -133,15 +133,16 @@
 
   <script>
     const panels = document.querySelectorAll('.panel');
-    console.log(panels);
+    // console.log(panels);
 
     function toggleOpen() {
-      console.log('opening!')
+      // console.log('openinga!')
+      // console.log('classlist!', this.classList);
       this.classList.toggle('open');
     }
 
     function toggleActive(e) {
-      console.log(e);
+      console.log(e.propertyName);
       // if (e.propertyName.includes('flex'))
       if (e.propertyName.includes('flex')) {
         this.classList.toggle('open-active');
